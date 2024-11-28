@@ -1,0 +1,325 @@
+CSS Styles
+
+/* Reset e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e63030;
+}
+
+.user-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.icon-btn {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.banner-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.banner-container img.active {
+    opacity: 1;
+}
+
+.banner-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.banner-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* Seção de busca */
+.search-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab {
+    color: #666;
+    text-decoration: none;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.tab.active {
+    color: #e63030;
+    font-weight: bold;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e63030;
+}
+
+.subtabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.subtab {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.subtab.active {
+    background: #e63030;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-button {
+    padding: 12px 24px;
+    background: #e63030;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.search-button:hover {
+    background: #cc2929;
+}
+
+/* Carros em destaque */
+.featured-cars {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.featured-cars h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-card h3 {
+    padding: 15px;
+    margin: 0;
+    color: #333;
+}
+
+.car-card p {
+    padding: 0 15px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.car-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e63030;
+}
+
+.ver-mais {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #e63030;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.ver-mais:hover {
+    background: #cc2929;
+}
+
+/* Marcas */
+.brands {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.brands h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.brand-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.brand-item {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.brand-item:hover {
+    transform: scale(1.1);
+}
+
+.brand-item img {
+    max-width: 60%;
+    height: auto;
+}

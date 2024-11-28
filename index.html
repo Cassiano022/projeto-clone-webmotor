@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmotors Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="https://www.webmotors.com.br/assets/img/webmotors.svg" alt="Logo" class="logo">
+        <nav class="nav-links">
+            <a href="#">Comprar</a>
+            <a href="#">Vender</a>
+            <a href="#">Serviços</a>
+            <a href="#">Notícias WM!</a>
+            <a href="#">Ajuda</a>
+        </nav>
+        <div class="user-actions">
+            <a href="#" class="login-btn">Entrar</a>
+            <a href="#" class="icon-btn">❤️</a>
+            <a href="#" class="icon-btn">💬</a>
+        </div>
+    </header>
+
+    <div class="banner" id="banner">
+        <button class="banner-nav prev">❮</button>
+        <div class="banner-container">
+            <img src="./img/promo1.png" alt="Promoção 1" class="active">
+            <img src="./img/promo2.png" alt="Promoção 2">
+            <img src="./img/promo3.png" alt="Promoção 3">
+        </div>
+        <button class="banner-nav next">❯</button>
+        <div class="banner-dots"></div>
+    </div>
+
+    <div class="search-section">
+        <div class="tabs">
+            <a href="#" class="tab active">Comprar carros</a>
+            <a href="#" class="tab">Comprar motos</a>
+            <a href="#" class="tab">Quero vender</a>
+            <a href="#" class="tab">Quero financiar</a>
+        </div>
+
+        <div class="subtabs">
+            <a href="#" class="subtab active">Todos</a>
+            <a href="#" class="subtab">Novos</a>
+            <a href="#" class="subtab">Usados</a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Digite marca ou modelo do carro">
+            <button class="search-button">VER OFERTAS (382.671)</button>
+        </div>
+    </div>
+
+    <div class="featured-cars">
+        <h2>Destaques</h2>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="./img/hondacivic.png" alt="civiv 1">
+                <h3>Honda Civic</h3>
+                <p>2022 • 15.000 km</p>
+                <p class="price">R$ 129.900</p>
+                <button class="ver-mais">Ver mais</button>
+            </div>
+            <div class="car-card">
+                <img src="./img/toyotacorolla.png" alt="Corolla 2">
+                <h3>Toyota Corolla</h3>
+                <p>2023 • 8.500 km</p>
+                <p class="price">R$ 142.900</p>
+                <button class="ver-mais">Ver mais</button>
+            </div>
+            <div class="car-card">
+                <img src="./img/Jeep Compass.png" alt="jeep 3">
+                <h3>Jeep Compass</h3>
+                <p>2022 • 22.000 km</p>
+                <p class="price">R$ 156.900</p>
+                <button class="ver-mais">Ver mais</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="brands">
+        <h2>Lojas Oficiais</h2>
+        <div class="brand-grid">
+            <div class="brand-item">
+                <img src="https://www.bmw.com.br/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg" alt="BMW">
+            </div>
+            <div class="brand-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Nissan_logo.png" alt="Nissan">
+            </div>
+            <div class="brand-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.svg" alt="Toyota">
+            </div>
+            <div class="brand-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/BYD_Auto_logo.svg" alt="BYD">
+            </div>
+            <div class="brand-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Hyundai_Motor_Company_logo.svg" alt="Hyundai">
+            </div>
+            <div class="brand-item">
+                <img src="/api/placeholder/60/60" alt="Fever">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
