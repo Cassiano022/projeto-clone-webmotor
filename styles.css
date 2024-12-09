@@ -323,3 +323,91 @@ body {
     max-width: 60%;
     height: auto;
 }
+
+/* Responsividade para telas menores (smartphones) */
+@media (max-width: 380px) {
+    /* Ajusta o header */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .user-actions {
+        margin-top: 10px;
+    }
+
+    /* Ajusta o banner */
+    .banner-container {
+        height: 200px; /* Reduz a altura para dispositivos menores */
+    }
+
+    .banner-container img {
+        object-fit: cover; /* Garante que as imagens do banner se ajustem */
+    }
+
+    /* Seção de busca */
+    .search-section {
+        padding: 10px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+        border-bottom: none;
+    }
+
+    .subtabs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    /* Carros em destaque */
+    .car-grid {
+        grid-template-columns: 1fr; /* Um carro por linha */
+        gap: 15px;
+    }
+
+    .car-card img {
+        height: 150px; /* Reduz a altura da imagem para dispositivos menores */
+    }
+
+    /* Marcas */
+    .brand-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .brand-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Ajustes gerais para fontes */
+    body {
+        font-size: 14px;
+    }
+}
+
